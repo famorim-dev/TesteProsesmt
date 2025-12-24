@@ -15,7 +15,7 @@ function Estado(){
     useEffect(() => {
         getStado()
         .then(res => {setStatus(res.data.data)})
-        .catch(res => toast.error("Não foi possivel carregar os dados"))
+        .catch(_res => toast.error("Não foi possivel carregar os dados"))
     }, [])
     
     return(

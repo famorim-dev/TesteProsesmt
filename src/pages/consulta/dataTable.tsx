@@ -12,7 +12,7 @@ function DateTable(){
         try {
             const res = await getDate(formattedDate)
             setStatus(res.data.data)
-        } catch (err) {
+        } catch (_err) {
             toast.error("Não foi possível carregar os dados")
         }
     }

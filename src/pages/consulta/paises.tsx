@@ -9,7 +9,7 @@ function Paises(){
     useEffect(() => {
         getPaises()
         .then(res => setStatus(res.data.data))
-        .catch((err) => {toast.error("Não foi possivel carregar os dados")})
+        .catch((_err) => {toast.error("Não foi possivel carregar os dados")})
     },[])
 
     return (
